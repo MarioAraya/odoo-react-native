@@ -5,6 +5,7 @@
  */
 import React, { Component } from 'react';
 import { AppRegistry, Image, View, Button, Text } from 'react-native';
+import { BadInstagramCloneApp } from './components/Camera'
 
 export default class Bananas extends Component {
   constructor() {
@@ -20,13 +21,15 @@ export default class Bananas extends Component {
     };
     return (
       <View>
-        <View style={{height: 50, backgroundColor: 'skyblue', marginTop: 50}}>
+        {/* <View style={{height: 50, backgroundColor: 'skyblue', marginTop: 50}}>
           <Text> { JSON.stringify(this.state.response) } </Text>
         </View>
         <Button onPress={() => this.createItem('chair')} title="POST item 'chair'" />        
         <Text> { "separador" } </Text>
-        <Button onPress={() => this.fetchItems()} title="GET item 'chair'" />
-        <Image source={pic} style={{height: 420, width: 388, marginTop: 50}} />
+        <Button onPress={() => this.fetchItems()} title="GET item 'chair'" /> */}
+        <Text> { "separador" } </Text>
+        <BadInstagramCloneApp /> 
+        {/* <Image source={pic} style={{height: 420, width: 388, marginTop: 50}} /> */}
       </View>
     );
   }
